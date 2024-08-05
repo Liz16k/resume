@@ -1,0 +1,91 @@
+export const personData2 = {
+  photo: "profile2.png",
+  fullName: "Graham Hunt",
+  profession: "Brand/Logo Designer",
+  email: "ivann19bj@gmail.com",
+  phone: "+34 666 666 666",
+  languages: [
+    { name: "English", lvl: 5 },
+    { name: "Spanish", lvl: 4 },
+    { name: "French", lvl: 3 },
+  ],
+  experience: [
+    {
+      date: "Jul. 2023 - Ago. 2023",
+      position: "Senior Graphic Designer",
+      place: "Pinnacle",
+      type: "Full-time",
+      details: [
+        "Research and brainstorm various design ideas for content and marketing.",
+        "Review the work submitted by Junior Designers and sharing feedback",
+      ],
+    },
+    {
+      date: "Ene. 2021 - Jul. 2023",
+      position: "Graphic / Web designer",
+      place: "Double Square",
+      type: "Full-time",
+      details: [
+        "Development of internal projects from scratch, product design of brands.",
+        "Landing page, webapps and hybrid apps",
+        "Taking decisions with stakeholders for the future of products such as Beagle labs, myur..",
+      ],
+    },
+    {
+      date: "Feb. 2021 - Jul. 2023",
+      position: "Graphic Designer",
+      place: "Freelance",
+      details: [
+        "Visual design for Events, Brands and Products.",
+        "Product design, Packaging Design",
+        "Logo Design",
+      ],
+    },
+  ],
+  tools: {
+    design: ["figma", "creativecloud", "miro", "notion", "meet", "analytics"],
+    ["no-code"]: ["zapier", "webflow", "framer", "wordpress"],
+    ["artiffical intelligence"]: ["chatgpt", "copilot", "midjourney"],
+  },
+  education: [
+    {
+      profession: "UI/UX",
+      date: "2024",
+      school: "Neoland",
+      tags: [
+        "UX",
+        "UI",
+        "research",
+        "DesignSystem",
+        "Agile",
+        "wireframing",
+        "figma",
+        "IA",
+      ],
+    },
+    {
+      profession: "Product designer",
+      date: "2022",
+      school: "Coursera",
+      tags: ["analytics", "research", "prototype", "wireframes"],
+    },
+    {
+      profession: "Graphic design",
+      date: "2017-2021",
+      school: "Cali Institute of the Arts",
+      tags: ["branding", "web", "illustration", "adobe"],
+    },
+  ],
+  interests: [
+    "branding",
+    "identity",
+    "logo",
+    "typography",
+    "photography",
+    "designing",
+    "poster design",
+    "research",
+    "social networks",
+    "illustration",
+  ],
+};

@@ -1,0 +1,258 @@
+/*-- Photo-block --*/
+section .photo {
+  grid-column: span 2;
+  aspect-ratio: 1;
+  padding: 0;
+  order: 1;
+}
+
+#person-photo {
+  width: 100%;
+  height: 100%;
+  /* background-image: url("/public/profileImg.png"); */
+  background-position: center;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*-- Welcome-block --*/
+.short-info {
+  grid-column: span 2;
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.short-info h2 {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.short-info h3 {
+  font-weight: 600;
+}
+.short-info h4 {
+  font-weight: 500;
+}
+
+/*-- Languages-block --*/
+.languages {
+  grid-column: span 4;
+  order: 3;
+}
+
+.languages__content {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.languages__content h4 {
+  margin-right: 16px;
+  font-weight: 500;
+}
+
+.languages__content__5 {
+  width: 100%;
+}
+.languages__content__4 {
+  width: 75%;
+}
+.languages__content__3 {
+  width: 50%;
+}
+.languages__content__2 {
+  width: 25%;
+}
+.languages__content__1 {
+  width: 1%;
+}
+
+.languages__content div {
+  height: 11px;
+  margin: 5px 0;
+  background: #28d979;
+  border-radius: 3px;
+}
+
+/*-- Experience-block --*/
+.experience {
+  order: 4;
+  grid-column: span 6;
+  display: flex;
+  flex-direction: column;
+}
+
+.experience__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  gap: 12px;
+}
+
+.experience__content__card {
+  background: #fff;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.experience__content__card > div {
+  margin-top: 8px;
+  display: flex;
+  gap: 12px;
+}
+
+.experience__content__card:nth-of-type(1) {
+  position: relative;
+  background: #28d979;
+  color: white;
+}
+
+.experience__content__card:nth-of-type(1)::after {
+  content: "most recent";
+  font-size: 8px;
+  color: #ddf163;
+  background: rgba(126, 115, 18, 0.4);
+  padding: 2px 6px;
+  border-radius: 60px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.experience__content__card:not(:nth-of-type(1)) > div p {
+  color: #3f3d3d;
+}
+
+.experience__content__card > div > div {
+  min-width: 124px;
+}
+
+/*-- Tools-block --*/
+.tools {
+  order: 5;
+  grid-column: span 2;
+  max-height: 360px;
+}
+
+.tools h2 {
+  margin-bottom: 0;
+}
+
+.tools__content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 12px 12px;
+}
+
+.tools__content__label,
+.tools__content__label-sm {
+  margin: 4px auto 0;
+  position: relative;
+  top: 6px;
+  width: fit-content;
+  background: #000;
+  border-radius: 59px;
+  color: #fff;
+  padding: 2px 6px;
+  font-weight: 400;
+}
+
+.tools__content__label-sm {
+  display: none;
+}
+
+.tools__content__group {
+  padding: 16px 12px 12px;
+  border-radius: 6px;
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+/*-- Education-block --*/
+.education {
+  order: 6;
+  grid-column: span 4;
+  grid-row: span 2;
+}
+
+.tags {
+  color: #149063;
+  font-weight: 200;
+}
+
+.education__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.education__content__card {
+  padding: 8px;
+  border-radius: 10px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 123px;
+  gap: 8px;
+}
+
+.education__content__card:nth-of-type(1) {
+  position: relative;
+  background: #28d979;
+  color: white;
+}
+
+.education__content__card:nth-of-type(1)::after {
+  content: url("/like.svg");
+  color: #f6ed1e;
+  padding: 2px 6px;
+  position: absolute;
+  top: 2px;
+  right: 4px;
+}
+.education__content__card:nth-of-type(1) .tags {
+  color: #ebf9f2;
+}
+
+/*-- Enterests-block --*/
+.interests {
+  order: 7;
+  grid-column: span 4;
+}
+
+.interests__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.interests__content li {
+  padding: 4px 10px;
+  list-style: none;
+  background: #fff;
+  border-radius: 40px;
+}
+
+.interests__content {
+  margin: 0;
+}
+
+/*-- Email-block --*/
+section .email {
+  order: 8;
+  grid-column: 5 / 9;
+  background: #000;
+  color: #fff;
+}
+.email h4 {
+  color: #dddddd;
+  font-weight: 400;
+}

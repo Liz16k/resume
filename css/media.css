@@ -1,0 +1,70 @@
+@media (max-width: 650px) {
+  .resume {
+    grid-template: auto / repeat(6, 1fr);
+  }
+
+  section .photo {
+    grid-column: span 2;
+  }
+  .short-info {
+    grid-column: span 4;
+  }
+  .languages {
+    grid-column: span 6;
+  }
+  .experience {
+    grid-column: span 6;
+  }
+  .experience__content {
+    gap: 16px;
+  }
+  .tools {
+    grid-column: span 6;
+  }
+  .tools__content {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 12px 0 0;
+    gap: 12px;
+  }
+  .tools__content__group {
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .tools__content__label {
+    display: none;
+  }
+  .tools__content__label-sm {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: -20px;
+    font-weight: 600;
+    font-size: 8px;
+    text-align: center;
+    color: #000;
+    background: none;
+  }
+
+  .education {
+    grid-column: span 6;
+  }
+  .education__content__card {
+    max-width: 30%;
+  }
+  .interests {
+    grid-column: span 6;
+  }
+  section .email {
+    grid-column: span 6;
+  }
+}
+
+@media (max-width: 386px) {
+  .education__content__card {
+    max-width: 46%;
+  }
+}
